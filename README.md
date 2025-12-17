@@ -1,16 +1,22 @@
-## Hi there 👋
+## Bello Mohammed Sani
+### Aerospace Engineer | Structural Systems, Digital Twins & Aircraft Maintenance
 
-<!--
-**Sm-bello/Sm-bello** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I focus on simulation-driven analysis of aircraft structural systems, 
+with interest in landing gear dynamics, digital twins, and maintenance-oriented design.
 
-Here are some ideas to get you started:
+### Core Interests
+- Aircraft Structural Analysis
+- Landing Gear Dynamics & Hard-Landing Scenarios
+- Digital Twins & Virtual HUMS
+- Aviation Safety & Maintenance Analytics
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Featured Projects
+- Landing Gear Digital Twin (MATLAB / Simulink)
+- Structural Beam Analysis Toolkit
+- Virtual HUMS Concept (Grafana + Time-Series Data)
+
+### Tools & Technologies
+MATLAB | Python | SolidWorks | Git | Grafana | InfluxDB
+
+📌 Portfolio Website (coming soon)  
+📌 LinkedIn
