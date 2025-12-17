@@ -1,8 +1,8 @@
 ## Bello Mohammed Sani
 ### Aerospace Engineer | Structural Systems, Digital Twins & Aircraft Maintenance
 
-I focus on simulation-driven analysis of aircraft structural systems, 
-with interest in landing gear dynamics, digital twins, and maintenance-oriented design.
+I develop physics-based and data-driven systems for aircraft structures, health monitoring, 
+and maintenance decision support.
 
 ### Core Interests
 - Aircraft Structure & Airworthiness Technology
