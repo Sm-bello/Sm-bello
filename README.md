@@ -5,18 +5,18 @@ I focus on simulation-driven analysis of aircraft structural systems,
 with interest in landing gear dynamics, digital twins, and maintenance-oriented design.
 
 ### Core Interests
-- Aircraft Structural Analysis
-- Landing Gear Dynamics & Hard-Landing Scenarios
-- Digital Twins & Virtual HUMS
+- Aircraft Structure & Airworthiness Technology
+- Digital Twin for SHM & PHM
+- Virtual HUMS & CAMP System (PostgreSQL, InfluxDB, Telegraf, Grafana)
 - Aviation Safety & Maintenance Analytics
 
 ### Featured Projects
-- Landing Gear Digital Twin (MATLAB / Simulink)
+- Landing Gear DigiTwinTwin (MATLAB / Simulink)
 - Structural Beam Analysis Toolkit
-- Virtual HUMS Concept (Grafana + Time-Series Data)
+- Virtual HUMS (Grafana + Time Series)
 
 ### Tools & Technologies
-MATLAB | Python | SolidWorks | Git | Grafana | InfluxDB
+MATLAB | Python | Ansys | Grafana | InfluxDB & Telegraf | PostgreSQL 
 
-📌 Portfolio Website (coming soon)  
-📌 LinkedIn
+Portfolio Website ( Coming soon) 
+📌LinkedIn
