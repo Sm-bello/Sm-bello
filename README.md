@@ -1,135 +1,116 @@
 <div align="center">
 
-# 👋 Bello Mohammed Sani
+# 👋 Mohammed Bello Sani
 
-### ✈️ Aerospace Engineer | Structural Systems, Digital Twins & Aircraft Maintenance
+### 🚀 Aerospace Engineering Undergraduate (AFIT 500L)
+**Digital Twin Architecture | Telemetry Pipelines | MRO Optimization**
+
+<br/>
 
 <p align="center">
-  <i>I develop physics-based and data-driven systems for aircraft structures, health monitoring, and maintenance decision support.</i>
+  <a href="https://smbello.vercel.app">
+    <img src="https://img.shields.io/badge/MISSION_STATUS-OPERATIONAL-success?style=for-the-badge&logo=vercel&logoColor=white" alt="Website Status"/>
+  </a>
 </p>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-sm--bello.github.io-blue?style=for-the-badge)](https://sm-bello.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mohammed-bello-sani-369a89284)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:bellosani2drescue@gmail.com)
+<p align="center">
+  <i>"Bridging the gap between physical airworthiness and digital intelligence."</i>
+</p>
 
-![Profile Views](https://komarev.com/ghpvc/?username=SMBello&color=blue&style=flat-square)
+<p align="center">
+  <a href="https://smbello.vercel.app">
+    <img src="https://img.shields.io/badge/🌐_Portfolio-Live_Logbook-0f172a?style=for-the-badge&logo=firefox"/>
+  </a>
+  <a href="https://www.linkedin.com/in/mohammed-bello-sani-369a89284">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="mailto:bellosani2drescue@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact_Me-ea580c?style=for-the-badge&logo=gmail"/>
+  </a>
+</p>
+
+<img src="https://komarev.com/ghpvc/?username=SMBello&color=0f172a&style=flat-square" alt="Profile Views"/>
 
 </div>
 
 ---
 
-## 🎯 Core Research Interests
+## 📡 The Objective
+
+I am a final-year Aerospace Engineering student at the **Air Force Institute of Technology (AFIT), Kaduna**. 
+
+My work moves beyond theoretical aerodynamics; I build **Cyber-Physical Systems** for aviation. By integrating **FlightGear** simulations with **InfluxDB** telemetry stacks, I am developing predictive maintenance dashboards that can interpret aircraft health in real-time. My background includes hands-on MRO experience at **Executive Airlift** and regulatory exposure at the **NCAA**.
+
+---
+
+## 🛠️ Technical Loadout
+
+<div align="center">
+
+| **Simulation & Physics** | **Telemetry & Data** | **Engineering Analysis** |
+|:---:|:---:|:---:|
+| ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white) <br> ![Simulink](https://img.shields.io/badge/Simulink-8E44AD?style=flat-square&logo=mathworks&logoColor=white) <br> ![FlightGear](https://img.shields.io/badge/FlightGear-0f172a?style=flat-square&logo=plane&logoColor=white) | ![InfluxDB](https://img.shields.io/badge/InfluxDB_3-22ADF6?style=flat-square&logo=influxdb&logoColor=white) <br> ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) <br> ![Telegraf](https://img.shields.io/badge/Telegraf-22ADF6?style=flat-square&logo=influxdata&logoColor=white) | ![Ansys](https://img.shields.io/badge/Ansys_Workbench-FFB71B?style=flat-square&logo=ansys&logoColor=black) <br> ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) <br> ![Postgres](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) |
+
+</div>
+
+---
+
+## ⚡ Key Repositories & Research
+
+### 🛬 [Landing Gear Digital Twin Architecture]
+**Physics-Based Predictive Maintenance**
+- **Core:** MATLAB/Simulink modeling of oleo-pneumatic strut dynamics.
+- **Goal:** Simulating stress loads during impact to predict seal failures before they occur.
+- **Status:** *Research Phase (AFIT Final Year Project)*
+
+### 📊 [Real-Time Flight Telemetry Stack]
+**The "Black Box" Live Dashboard**
+- **Pipeline:** FlightGear (UDP) $\rightarrow$ Telegraf $\rightarrow$ InfluxDB 3 Core $\rightarrow$ Grafana.
+- **Function:** Visualizes pitch, roll, yaw, and engine health in real-time time-series dashboards.
+- **Tech:** Python scripts for data parsing and UDP listening.
+
+### 📐 [Structural Beam Analysis]
+**Finite Element Analysis**
+- **Tools:** Ansys Workbench & Abaqus.
+- **Scope:** Stress distribution analysis on aircraft wing spars under critical loading conditions.
+
+---
+
+## ✈️ Operational Experience
 
 <table>
-<tr>
-<td width="50%">
-
-### 🛩️ Aircraft Structure & Airworthiness
-Advanced analysis of aircraft structural systems and airworthiness compliance technologies.
-
-</td>
-<td width="50%">
-
-### 🔄 Digital Twin for SHM & PHM
-Virtual modeling for Structural Health Monitoring (SHM) and Prognostics & Health Management (PHM).
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📊 Virtual HUMS & CAMP Systems
-Health and Usage Monitoring Systems with Continuing Airworthiness Maintenance Programs.
-> Stack: PostgreSQL, InfluxDB, Telegraf, Grafana
-
-</td>
-<td width="50%">
-
-### ✈️ Aviation Safety & Maintenance Analytics
-Data-driven approaches to enhance aviation safety and optimize maintenance operations.
-
-</td>
-</tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🏛️ Regulatory (NCAA)</h3>
+      <p align="center"><i>Dept. of Airworthiness Standards</i></p>
+      <p>Gained insight into the legal and documentation backbone of aviation. Assisted in technical log audits and certification filing procedures.</p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🔧 Hangar Ops (Executive Airlift)</h3>
+      <p align="center"><i>Line Maintenance Intern</i></p>
+      <p>Hands-on experience with wheel assembly overhauls, hydraulic checks, and routine line maintenance on VIP aircraft at Abuja Int'l Airport.</p>
+    </td>
+  </tr>
 </table>
 
 ---
 
-## 🚀 Featured Projects
-
-### 🛬 Landing Gear Digital Twin
-**Physics-based modeling for predictive maintenance**
-- Platform: MATLAB / Simulink
-- Focus: Real-time health monitoring and fault detection
-- Application: Predictive maintenance strategies for landing gear systems
-
-### 🔧 Structural Beam Analysis Toolkit
-**Engineering analysis tools for aircraft structures**
-- Advanced structural analysis capabilities
-- Support for complex loading scenarios
-- Optimization for airworthiness compliance
-
-### 📈 Virtual HUMS (Health and Usage Monitoring System)
-**Real-time monitoring dashboard with time-series analytics**
-- Visualization: Grafana
-- Data Pipeline: InfluxDB + Telegraf
-- Real-time aircraft health metrics and trend analysis
-
----
-
-## 🛠️ Tools & Technologies
+## 📊 GitHub Analytics
 
 <div align="center">
-
-### Engineering & Simulation
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![ANSYS](https://img.shields.io/badge/ANSYS-FFB71B?style=for-the-badge&logo=ansys&logoColor=black)
-
-### Data & Monitoring
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![InfluxDB](https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=influxdb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Telegraf](https://img.shields.io/badge/Telegraf-22ADF6?style=for-the-badge&logo=influxdata&logoColor=white)
-
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SMBello&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SMBello&layout=compact&langs_count=8&theme=tokyonight"/>
-
-</div>
-
----
-
-## 🌐 Connect With Me
-
-<div align="center">
-
-**Portfolio Website:** [sm-bello.github.io](https://sm-bello.github.io)  
-**LinkedIn:** [Mohammed Bello Sani](https://www.linkedin.com/in/mohammed-bello-sani-369a89284)  
-**Email:** [bellosani2drescue@gmail.com](mailto:bellosani2drescue@gmail.com)
-
+  <br/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=SMBello&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true&hide_border=true"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SMBello&layout=compact&langs_count=6&theme=midnight-purple&hide_border=true"/>
 </div>
 
 ---
 
 <div align="center">
 
-### 💡 *"Advancing aviation safety through intelligent systems"*
+### 🔭 *Open to collaboration on Digital Twin & Aviation Safety projects.*
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=SMBello.SMBello)
 
-⭐ **If you find my work interesting, consider starring my repositories!**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=100&section=footer"/>
 </div>
