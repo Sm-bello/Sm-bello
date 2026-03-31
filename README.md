@@ -238,6 +238,8 @@ Local model router running on HP ProBook via WSL2. Auto-routes to `phi4:14b` →
   </picture>
 </div>
 
+> **ℹ️ Snake setup:** Add a GitHub Actions workflow to your profile repo (`Sm-bello/Sm-bello`) to auto-generate the snake SVG. See [Platane/snk](https://github.com/Platane/snk) for the 5-minute setup.
+
 ---
 
 <div align="center">
