@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f172a,50:1e3a5f,100:0ea5e9&height=500&section=header&text=Mohammed%20Bello%20Sani&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=65&desc=Aerospace%20Engineer%20%7C%20Digital%20Twin%20Architect%20%7C%20AI%20Researcher&descAlignY=82&descSize=14"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f172a,50:1e3a5f,100:0ea5e9&height=50&section=header&text=Mohammed%20Bello%20Sani&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=65&desc=Aerospace%20Engineer%20%7C%20Digital%20Twin%20Architect%20%7C%20AI%20Researcher&descAlignY=82&descSize=14"/>
 
 </div>
 
