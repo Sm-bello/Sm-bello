@@ -1,6 +1,212 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f172a,50:1e3a5f,100:0ea5e9&height=250&section=header&text=Mohammed%20Bello%20Sani&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=65&desc=Aerospace%20Engineer%20%7C%20Digital%20Twin%20Architect%20%7C%20AI%20Researcher&descAlignY=82&descSize=14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="860" height="220">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#0c1a2e"/>
+      <stop offset="100%" stop-color="#060d18"/>
+    </radialGradient>
+
+    <!-- Radar sweep gradient (conic fake via linear + rotation) -->
+    <radialGradient id="sweepFade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glow filter for radar rings -->
+    <filter id="ringGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Strong glow for sweep line -->
+    <filter id="sweepGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Text glow -->
+    <filter id="textGlow" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Blip glow -->
+    <filter id="blipGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Sweep wedge clip -->
+    <clipPath id="radarClip">
+      <circle cx="148" cy="110" r="98"/>
+    </clipPath>
+
+    <!-- Scanline overlay -->
+    <pattern id="scanlines" x="0" y="0" width="860" height="3" patternUnits="userSpaceOnUse">
+      <rect width="860" height="1" fill="#0ea5e9" fill-opacity="0.025"/>
+      <rect y="1" width="860" height="2" fill="transparent"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="220" fill="url(#bgGrad)"/>
+  <rect width="860" height="220" fill="url(#scanlines)"/>
+
+  <!-- ── RADAR SCOPE (left side) ── -->
+
+  <!-- Outer bezel ring -->
+  <circle cx="148" cy="110" r="103" fill="none" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Radar range rings -->
+  <g filter="url(#ringGlow)">
+    <circle cx="148" cy="110" r="78" fill="none" stroke="#0ea5e9" stroke-width="0.7" stroke-opacity="0.35"/>
+    <circle cx="148" cy="110" r="58" fill="none" stroke="#0ea5e9" stroke-width="0.7" stroke-opacity="0.35"/>
+    <circle cx="148" cy="110" r="38" fill="none" stroke="#0ea5e9" stroke-width="0.7" stroke-opacity="0.35"/>
+    <circle cx="148" cy="110" r="18" fill="none" stroke="#0ea5e9" stroke-width="0.7" stroke-opacity="0.35"/>
+    <!-- Main boundary -->
+    <circle cx="148" cy="110" r="98" fill="#050f1c" fill-opacity="0.85" stroke="#0ea5e9" stroke-width="1.2" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- Cross-hairs -->
+  <g stroke="#0ea5e9" stroke-width="0.5" stroke-opacity="0.25" clip-path="url(#radarClip)">
+    <line x1="50" y1="110" x2="246" y2="110"/>
+    <line x1="148" y1="12" x2="148" y2="208"/>
+    <!-- Diagonal guides -->
+    <line x1="79" y1="41" x2="217" y2="179"/>
+    <line x1="217" y1="41" x2="79" y2="179"/>
+  </g>
+
+  <!-- Sweep wedge — trailing fade arc segments -->
+  <g clip-path="url(#radarClip)">
+    <!-- Fading trail segments (static approximation) -->
+    <path d="M148,110 L226,55 A98,98 0 0,1 230,68 Z" fill="#0ea5e9" fill-opacity="0.04"/>
+    <path d="M148,110 L230,68 A98,98 0 0,1 234,82 Z" fill="#0ea5e9" fill-opacity="0.06"/>
+    <path d="M148,110 L234,82 A98,98 0 0,1 246,110 Z" fill="#0ea5e9" fill-opacity="0.10"/>
+    <path d="M148,110 L246,110 A98,98 0 0,1 234,138 Z" fill="#0ea5e9" fill-opacity="0.15"/>
+
+    <!-- Animated sweep line group -->
+    <g filter="url(#sweepGlow)">
+      <animateTransform attributeName="transform" attributeType="XML"
+        type="rotate" from="0 148 110" to="360 148 110"
+        dur="4s" repeatCount="indefinite"/>
+      <!-- Main sweep line -->
+      <line x1="148" y1="110" x2="246" y2="110"
+        stroke="#0ea5e9" stroke-width="1.8" stroke-opacity="0.95"/>
+      <!-- Bright leading edge wedge -->
+      <path d="M148,110 L246,110 A98,98 0 0,0 234,138 Z"
+        fill="url(#sweepFade)" opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- Center dot -->
+  <circle cx="148" cy="110" r="3" fill="#0ea5e9" filter="url(#blipGlow)"/>
+
+  <!-- Radar blips (aircraft targets) -->
+  <!-- Blip 1 -->
+  <g filter="url(#blipGlow)">
+    <circle cx="192" cy="78" r="3.5" fill="#38bdf8">
+      <animate attributeName="opacity" values="0;0;1;1;0.4;1;0;0" dur="4s" begin="0.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <!-- Blip 2 -->
+  <g filter="url(#blipGlow)">
+    <circle cx="168" cy="148" r="3" fill="#38bdf8">
+      <animate attributeName="opacity" values="0;0;0;1;1;0.6;1;0" dur="4s" begin="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <!-- Blip 3 -->
+  <g filter="url(#blipGlow)">
+    <circle cx="115" cy="88" r="2.5" fill="#7dd3fc">
+      <animate attributeName="opacity" values="0;0;0;0;1;1;0.5;0" dur="4s" begin="3.1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <!-- Blip 4 (larger — flagship target) -->
+  <g filter="url(#blipGlow)">
+    <circle cx="210" cy="115" r="4" fill="#0ea5e9">
+      <animate attributeName="opacity" values="0;0;1;0.8;1;0.3;0;0" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="210" cy="115" r="7" fill="none" stroke="#0ea5e9" stroke-width="0.8">
+      <animate attributeName="opacity" values="0;0;0.6;0.3;0;0;0;0" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;9;12;16" dur="1.5s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Range tick labels -->
+  <g fill="#0ea5e9" fill-opacity="0.4" font-family="'Courier New',monospace" font-size="6">
+    <text x="227" y="112">98NM</text>
+    <text x="207" y="112">78</text>
+    <text x="187" y="112">58</text>
+  </g>
+
+  <!-- ── DIVIDER ── -->
+  <line x1="262" y1="14" x2="262" y2="206" stroke="#0ea5e9" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- ── TEXT PANEL (right side) ── -->
+
+  <!-- Callsign label -->
+  <text x="292" y="46" font-family="'Courier New',monospace" font-size="10"
+    fill="#38bdf8" fill-opacity="0.7" letter-spacing="4">PILOT IDENTIFICATION</text>
+
+  <!-- Name with glow -->
+  <text x="290" y="98" font-family="'Courier New',monospace" font-size="38"
+    font-weight="bold" fill="#ffffff" filter="url(#textGlow)" letter-spacing="1">
+    M. BELLO SANI
+  </text>
+
+  <!-- Subtitle line 1 -->
+  <text x="292" y="126" font-family="'Courier New',monospace" font-size="12.5"
+    fill="#38bdf8" letter-spacing="1.5">
+    AEROSPACE ENGINEER  ·  DIGITAL TWIN ARCHITECT
+  </text>
+
+  <!-- Subtitle line 2 -->
+  <text x="292" y="148" font-family="'Courier New',monospace" font-size="11"
+    fill="#7dd3fc" fill-opacity="0.75" letter-spacing="1">
+    CNN-BiLSTM · PHM · Blockchain Avionics · AI/ML
+  </text>
+
+  <!-- Status bar -->
+  <rect x="290" y="165" width="540" height="1" fill="#0ea5e9" fill-opacity="0.2"/>
+
+  <!-- Status readouts -->
+  <g font-family="'Courier New',monospace" font-size="9.5" fill="#0ea5e9" fill-opacity="0.6">
+    <text x="292" y="182">STATUS:</text>
+    <text x="345" y="182" fill="#4ade80" fill-opacity="0.9">■ ACTIVE</text>
+
+    <text x="430" y="182">AFFILIATION:</text>
+    <text x="510" y="182" fill="#38bdf8" fill-opacity="0.85">AFIT · BEIHANG UNIV.</text>
+
+    <text x="292" y="200">PAPERS:</text>
+    <text x="345" y="200" fill="#fbbf24" fill-opacity="0.9">AIAA JAIS  ·  IEEE TAES</text>
+
+    <text x="640" y="200" fill="#38bdf8" fill-opacity="0.5">CGPA 4.10/5.00</text>
+  </g>
+
+  <!-- Blinking cursor after name -->
+  <rect x="820" y="168" width="8" height="2" fill="#0ea5e9">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner HUD marks -->
+  <g stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.35" fill="none">
+    <!-- Top-left -->
+    <polyline points="4,18 4,4 18,4"/>
+    <!-- Top-right -->
+    <polyline points="842,4 856,4 856,18"/>
+    <!-- Bottom-left -->
+    <polyline points="4,202 4,216 18,216"/>
+    <!-- Bottom-right -->
+    <polyline points="842,216 856,216 856,202"/>
+  </g>
+
+  <!-- Top HUD label -->
+  <text x="50%" y="13" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="8" fill="#0ea5e9" fill-opacity="0.35" letter-spacing="6">
+    AIR FORCE INSTITUTE OF TECHNOLOGY  //  KADUNA
+  </text>
+</svg>
 
 </div>
 
