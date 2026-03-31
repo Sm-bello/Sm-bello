@@ -1,18 +1,32 @@
-name: Generate Snake Contribution Animation
+name: Generate Snake Animations
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Every day at midnight UTC
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
 jobs:
-  snake:
+  generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Git
+        run: |
+          git config --global user.name 'Sm-bello'
+          git config --global user.email 'youremail@example.com'
+
       - name: Generate Snake Animation
-        uses: Platane/snk@v1.0.1
+        uses: Platane/snk@v1.1.0
+        id: snake
         with:
-          github_user: Sm-bello
-          output: .github/snake/github-snake
-          svg: true
-          # You can set dark mode true if you want to generate dark mode as well
-          dark_mode: true
+          github_user: 'Sm-bello'
+          svg_out: 'github/snake'
+
+      - name: Commit and Push Snake Animation
+        run: |
+          git add github/snake/*.svg
+          git commit -m 'Update snake animations' || echo 'No changes to commit'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
