@@ -1,0 +1,18 @@
+name: Generate Snake Contribution Animation
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight UTC
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Snake Animation
+        uses: Platane/snk@v1.0.1
+        with:
+          github_user: Sm-bello
+          output: .github/snake/github-snake
+          svg: true
+          # You can set dark mode true if you want to generate dark mode as well
+          dark_mode: true
